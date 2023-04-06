@@ -1,0 +1,9 @@
+actor: AcceptanceTester
+modules:
+    enabled:
+        - Cli
+        - Filesystem
+        - \Weirdan\Codeception\Psalm\Module
+    config:
+      '\Weirdan\Codeception\Psalm\Module':
+        default_dir: build/_run
