@@ -1,1 +1,4 @@
 /vendor/
+/psalm.xml
+/phpcs.xml
+/build/

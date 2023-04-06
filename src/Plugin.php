@@ -21,6 +21,6 @@ final class Plugin implements PluginEntryPointInterface
             return;
         }
 
-        $registration->addStubFile(__DIR__ . '/../stubs/UriInterface.phpstub');
+        $registration->addStubFile(__DIR__ . '/../stubs/http-message/UriInterface.phpstub');
     }
 }
