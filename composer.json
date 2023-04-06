@@ -1,7 +1,7 @@
 {
     "name": "boesing/psalm-stubs-psr",
-    "license": "BSD-3-Clause",
     "description": "Psalm plugin to register stubs for PSR standards",
+    "license": "BSD-3-Clause",
     "type": "psalm-plugin",
     "authors": [
         {
@@ -16,9 +16,9 @@
         "codeception/codeception": "^5.0",
         "codeception/module-asserts": "^3.0",
         "doctrine/coding-standard": "^11.1",
+        "psr/http-message": "^1.1",
         "vimeo/psalm": "^5.9",
-        "weirdan/codeception-psalm-module": "^0.14.0",
-        "psr/http-message": "^1.1"
+        "weirdan/codeception-psalm-module": "^0.14.0"
     },
     "autoload": {
         "psr-4": {
@@ -34,5 +34,11 @@
         "psalm": {
             "pluginClass": "Boesing\\PsalmStubsPsr\\Plugin"
         }
+    },
+    "scripts": {
+        "analyze": "psalm --no-cache",
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "codecept run"
     }
 }
