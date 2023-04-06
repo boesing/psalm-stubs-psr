@@ -30,4 +30,4 @@ jobs:
           composer-options: "--ignore-platform-req=php"
 
       - name: Run tests
-        run: "vendor/bin/codecept run"
+        run: "vendor/bin/codecept build && vendor/bin/codecept run"
